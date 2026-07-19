@@ -29,8 +29,9 @@ backdrop-filter:blur(10px);
 
 .logo{
 
-font-family:"Cormorant Garamond",serif;
-font-size:34px;
+font-family:"Calibri",serif;
+font-size:50px;
+font-style: bold;
 color:#71586e;
 
 }
@@ -44,11 +45,6 @@ transition:.3s;
 
 }
 
-nav a:hover{
-
-color:#b98ea5;
-
-}
 
 .hero{
 
