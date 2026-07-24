@@ -1,18 +1,35 @@
-.modlue{
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.modules-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.module{
 
     font-family: "Yu Gothic Light";
     font-size: 14px;
     padding: 50px;
-    margin: -10px;
-    background-color: black;
     color: rgb(255, 150, 255);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
-
+    
 }
 
+.module:nth-child(odd){
+    background-color: black;
+}
+
+.module:nth-child(even){
+    background-color: rgb(190,190,190);
+    color: rgb(50, 0, 50);
+}
 
 .module-text {
     width: 60%;
@@ -20,11 +37,10 @@
 }
 
 .module img {
-    width: 300px;
+    width: 500px;
 }
 
 
-/* Mobile */
 @media (max-width: 600px) {
     .module {
         flex-direction: column;
@@ -34,5 +50,36 @@
     .module img {
         width: 100%;
         max-width: 300px;
+    }
+}
+
+
+.navbar, footer{
+    display: flex;
+    font-family: "Yu Gothic Light";
+    background: black;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 150, 255);
+    gap: 20px;
+
+}
+
+footer{
+
+    margin-top: 50px;
+}
+
+.navbar a{
+    font-size: 40px;
+    color: rgb(255, 150, 255);
+}
+
+@media (max-width: 600px) {
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }
