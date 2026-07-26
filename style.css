@@ -27,11 +27,7 @@ body{
     display: inline;
 }
 
-@media(max-width: 600px){
-    #stock{
-        display: block;
-    }
-}
+
 
 .module:nth-child(odd){
     background-color: black;
@@ -55,17 +51,7 @@ body{
 }
 
 
-@media (max-width: 600px) {
-    .module {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .module img {
-        width: 100%;
-        max-width: 300px;
-    }
-}
 
 
 .navbar{
@@ -78,6 +64,16 @@ body{
     color: rgb(255, 150, 255);
     gap: 20px;
 
+}
+
+
+#floating-navbar a{
+    font-family: "Yu Gothic Light";
+    color: white;
+    background: darkmagenta;
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
 
 footer{
@@ -99,5 +95,19 @@ footer{
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
+
+    .module {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .module img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+     #stock{
+        display: block;
     }
 }
