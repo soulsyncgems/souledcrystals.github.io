@@ -1,0 +1,36 @@
+/* Register a custom color variable so CSS knows how to smoothly animate it */
+@property --rainbow-hue {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+#stock {
+    /* Create a multi-color linear gradient driven by our dynamic hue variable */
+    background: linear-gradient(
+        135deg,
+        hsl(var(--rainbow-hue), 90%, 60%),
+        hsl(calc(var(--rainbow-hue) + 60deg), 90%, 60%),
+        hsl(calc(var(--rainbow-hue) + 120deg), 90%, 60%)
+    );
+
+    /* Clip the background to the text boundaries */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+
+    /* Smoothly cycle the hue variable from 0 to 360 degrees infinitely */
+    animation: color-fade 1s linear infinite;
+
+
+    
+    font-size: 17px;
+}
+
+@keyframes color-fade {
+  to {
+    --rainbow-hue: 360deg;
+  }
+}

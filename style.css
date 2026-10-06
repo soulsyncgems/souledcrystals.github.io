@@ -14,19 +14,13 @@ body{
 
     font-family: "Yu Gothic Light";
     font-size: 16px;
-    padding: 50px;
+    padding: 40px;
     color: rgb(255, 150, 255);
     display: flex;
     align-items: center;
     justify-content: space-between;
     
 }
-
-#stock{
-    color: rgb(255,100,100);
-    display: inline;
-}
-
 
 
 .module:nth-child(odd){
@@ -38,20 +32,17 @@ body{
     color: black;
 }
 
+
+
 .module-text {
     width: 50%;
 }
 
 .module img {
-    width: 500px;
-    height: 400px;
     object-fit: cover;
     display: block;
     object-position: center;
 }
-
-
-
 
 
 .navbar{
@@ -73,6 +64,7 @@ body{
     background: darkmagenta;
     position: fixed;
     top: 0px;
+    padding-right: 5px;
     left: 0px;
 }
 
@@ -107,6 +99,18 @@ footer{
 
 .contact, a:visted{
     color: rgb(255, 150, 255);
+}
+
+.buy-button {
+    display: inline-block;
+    background: #7c3aed;
+    color: white;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
